@@ -10,21 +10,40 @@ export default function Header() {
       </div>
 
       <div className="flex items-center justify-between w-full absolute top-0 px-8 py-6">
-        <div className="w-[77px] h-[79px] rounded-full bg-[#fff] flex items-center justify-center mr-[78px]">
-          <img className="w-[59px] h-[53px]" src="/images/logo.png" alt="" />
+        <div className="w-[66px] h-[69px] rounded-full bg-[#fff] relative mr-[78px]">
+          <img
+            className="w-[49px] h-[43px] absolute top-4 left-2"
+            src="/images/logo.png"
+            alt=""
+          />
         </div>
 
-        <nav className="relative">
+        <nav className="relative z-20">
           <div className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <img className="w-9 h-9" src="/images/icon-menu.svg" alt="" />
           </div>
 
-          <ul className="hidden md:flex flex flex-col md:flex-row items-center space-x-4 text-[#fff]">
-            <li className="text-[1.125rem]">About Us</li>
-            <li className="text-[1.125rem]">Tasks</li>
-            <li className="text-[1.125rem]">Courses</li>
-            <li className="text-[1.125rem]">Academy</li>
-            <li className="text-[1.125rem]">Contact Us</li>
+          <ul className="hidden md:flex flex flex-col md:flex-row items-center text-[#fff]">
+            <li className="py-2 px-4 text-[1rem] hover:text-[#636363] cursor-pointer relative group">
+              About Us
+              <span class="absolute left-0 -bottom-3 w-0 h-[2px] bg-[#fff] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="py-2 px-4 text-[1rem] hover:text-[#636363] cursor-pointer relative group">
+              Tasks
+              <span class="absolute left-0 -bottom-3 w-0 h-[2.5px] bg-[#fff] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="py-2 px-4 text-[1rem] hover:text-[#636363] cursor-pointer relative group">
+              Courses
+              <span class="absolute left-0 -bottom-3 w-0 h-[2px] bg-[#fff] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="py-2 px-4 text-[1rem] hover:text-[#636363] cursor-pointer relative group">
+              Academy
+              <span class="absolute left-0 -bottom-3 w-0 h-[2px] bg-[#fff] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="py-2 px-4 text-[1rem] hover:text-[#636363] cursor-pointer relative group">
+              Contact Us
+              <span class="absolute left-0 -bottom-3 w-0 h-[2px] bg-[#fff] group-hover:w-full transition-all duration-300"></span>
+            </li>
           </ul>
 
           {/* Mobile menu */}
