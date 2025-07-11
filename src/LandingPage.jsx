@@ -5,6 +5,7 @@ import LastMatch from "./componets/heroSection/LastMatch";
 import NextMatches from "./componets/heroSection/NextMatches";
 import Tasks from "./componets/ourTask/Tasks";
 import SectionLabel from "./componets/utils/SectionLabel";
+import CoursesContainer from "./componets/courses/CoursesContainer";
 
 export default function LandingPage() {
   const [label, setLabel] = useState("");
@@ -17,10 +18,11 @@ export default function LandingPage() {
       </section>
 
       <AboutContainer label={label} />
-      <div className="px-20 flex flex-col items-center mt-[32px]">
+      <div className="px-20 flex flex-col items-center mt-[82px] mb-20">
         <SectionLabel label={"Our Tasks"} />
         <Tasks />
       </div>
+      <CoursesContainer />
     </>
   );
 }

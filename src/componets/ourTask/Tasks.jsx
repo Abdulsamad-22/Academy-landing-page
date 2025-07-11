@@ -32,7 +32,7 @@ const tasks = [
 ];
 export default function Tasks() {
   return (
-    <div className="w-[90%] grid  grid-cols-1 md:grid-cols-2  gap-8">
+    <div className="w-[90%] grid  grid-cols-1 md:grid-cols-2 mt-20  gap-8">
       {tasks.map((task) => (
         <div className="flex flex-col items-start">
           <div className="flex items-center gap-4 mb-4">
