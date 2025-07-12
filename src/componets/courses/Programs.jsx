@@ -1,3 +1,5 @@
+import Connector from "./Connector";
+
 const programs = [
   {
     ageGrade: "3 - 6 Years Old",
@@ -20,17 +22,19 @@ const programs = [
 
 export default function Programs() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[50%_50%] gap-x-[320px] gap-y-[5rem] items-center mt-10 relative">
+    <div className="grid grid-cols-1 md:grid-cols-[30%_30%] gap-x-[630px] gap-y-[8rem] items-center mt-[5rem] relative z-20">
+      <Connector />
+
       {programs.map((program, index) => (
         <div key={index} className="w-[280px] relative">
           <div className="w-[150px] py-2 px-3 border-2 border-[#c72020] mb-4">
             {program.ageGrade}
           </div>
-          <p className="w-60">{program.subText}</p>
+          <p className="w-[205px]">{program.subText}</p>
         </div>
       ))}
       <img
-        className=" w-[60%] absolute -top-[90%] left-[25%]"
+        className=" w-[50%] z-10 absolute -top-[80%] left-[24%]"
         src="/images/player-image.png"
         alt=""
       />

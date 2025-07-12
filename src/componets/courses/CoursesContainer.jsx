@@ -6,10 +6,9 @@ export default function CoursesContainer() {
   return (
     <>
       <CoursesHeader />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center px-8">
         <Programs />
       </div>
-      <Connector />
     </>
   );
 }
