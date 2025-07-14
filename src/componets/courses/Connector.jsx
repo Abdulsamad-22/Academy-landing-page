@@ -1,6 +1,6 @@
 export default function Connector() {
   return (
-    <div className="absolute top-16 left-[10%] w-[75%] grid grid-cols-[50%_50%] gap-y-[60px] gap-x-[50px] bg-transparent -mt-[30px] z-0">
+    <div className="absolute top-16 left-[10%] w-[75%] grid grid-cols-[50%_50%] gap-y-[60px] gap-x-[50px] bg-transparent -mt-[30px] z-0 hidden md:grid">
       <div className="relative bg-transparent w-full h-[200px] bg-white flex items-start justify-center">
         <div className="absolute top-10 left-1/4 flex items-center justify-center w-14 h-14 rounded-full border-4 border-gray-300">
           <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">

@@ -4,7 +4,7 @@ export default function AboutClubText({ label }) {
   return (
     <div className="w-full md:w-[50%]">
       <div className="mb-8 space-y-4 w-full md:w-[450px]">
-        <div className="w-[140px]">
+        <div className="w-[152px]">
           <SectionLabel label={"About The Club"} />
         </div>
 
@@ -17,9 +17,11 @@ export default function AboutClubText({ label }) {
           faucibus. Nisl aliquet pellentesque in dolor, fringilla
         </p>
       </div>
-      <button className="py-2 px-6 border-2 border-[#c72020] text-[#c72020]">
-        Read More
-      </button>
+      <div className="h-[44px]">
+        <button className="py-2 px-6 border-2 border-[#c72020] text-[#c72020] hover:border-0 hover:bg-[#c72020] hover:text-white transition duration-300">
+          Read More
+        </button>
+      </div>
     </div>
   );
 }

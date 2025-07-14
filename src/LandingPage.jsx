@@ -6,6 +6,8 @@ import NextMatches from "./componets/heroSection/NextMatches";
 import Tasks from "./componets/ourTask/Tasks";
 import SectionLabel from "./componets/utils/SectionLabel";
 import CoursesContainer from "./componets/courses/CoursesContainer";
+import News from "./componets/articlesNews/News";
+import JoinOurTeam from "./componets/ourTeam/JoinOurTeam";
 
 export default function LandingPage() {
   const [label, setLabel] = useState("");
@@ -23,6 +25,8 @@ export default function LandingPage() {
         <Tasks />
       </div>
       <CoursesContainer />
+      <News label={label} />
+      <JoinOurTeam label={label} />
     </>
   );
 }
