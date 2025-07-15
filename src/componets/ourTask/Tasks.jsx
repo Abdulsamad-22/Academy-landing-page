@@ -33,10 +33,16 @@ const tasks = [
 export default function Tasks() {
   return (
     <div className="w-full md:w-[90%] grid  grid-cols-1 md:grid-cols-2 mt-20  gap-8">
-      {tasks.map((task) => (
-        <div className="flex flex-col items-start">
+      {tasks.map((task, title) => (
+        <div className="flex flex-col items-start" key={title}>
           <div className="flex items-center gap-4 mb-4">
-            <img className="w-10 h-10" src={task.icon} alt="" />
+            <img
+              className={`w-10 h-10 ${
+                task.title === "Strength" ? "rotate-[-45deg]" : ""
+              }`}
+              src={task.icon}
+              alt=""
+            />
             <div className="space-y-3">
               <h4 className="text-[1.5rem]">{task.title}</h4>
               <hr className="w-full border-[0.5px] border-black" />

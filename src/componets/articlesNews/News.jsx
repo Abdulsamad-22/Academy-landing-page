@@ -7,7 +7,7 @@ const newsContents = [
     header: "Training Center Day After Between Unloading and Match",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 
   {
@@ -16,7 +16,7 @@ const newsContents = [
     header: "Young Lads Debrief   The Stats After First Home Game",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 
   {
@@ -25,7 +25,7 @@ const newsContents = [
     header: "Chrisanctus and Pascal; “We Only Have One Result Victory”",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 
   {
@@ -34,7 +34,7 @@ const newsContents = [
     header: "BLFA Announces Partnership With Detyms Supermarket!",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 
   {
@@ -43,7 +43,7 @@ const newsContents = [
     header: "Training Center   Energizing for Green Hose",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 
   {
@@ -52,7 +52,7 @@ const newsContents = [
     header: "Training Center   BLFA’s Week Begins",
     subText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             morbi erat enim faucibus. Nisl alique`,
-    date: "April 23, 2023 . 4:05am",
+    date: "July 23, 2025",
   },
 ];
 
@@ -66,21 +66,21 @@ export default function News({ label }) {
 
       <div className="w-full grid grid-col-1 md:grid-cols-3 gap-y-12 gap-x-4 px-9 -items-center">
         {newsContents.map((news, header) => (
-          <div className="border-[1px] border-[#c4c4c4] " key={header}>
-            <div className="w-full cursor-pointer">
+          <div className="border-[1px] border-[#c4c4c4] s" key={header}>
+            <div className="w-full cursor-pointer rounded-2xl">
               <img
-                className="w-full transition-transform duration-300 hover:-translate-y-2"
+                className="w-full rounded-2xl transition-transform duration-300 hover:-translate-y-2"
                 src={news.image}
                 alt=""
               />
             </div>
 
-            <div className="w-full break-all h-40 space-y-3 px-3 mt-4 mb-0">
+            <div className="w-full break-word h-40 space-y-3 px-3 mt-4 mb-0">
               <h4 className=" text-[1.25rem] font-semibold">{news.header}</h4>
-              <p>{news.subText}</p>
+              <p className="text-[1rem] text-[#666]">{news.subText}</p>
             </div>
 
-            <div className="py-4 px-3 border-t-[1px] border-[#c4c4c4]">
+            <div className="py-4 px-3 text-[#666] border-t-[1px] border-[#c4c4c4]">
               {news.date}
             </div>
           </div>

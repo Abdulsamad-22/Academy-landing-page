@@ -8,6 +8,8 @@ import SectionLabel from "./componets/utils/SectionLabel";
 import CoursesContainer from "./componets/courses/CoursesContainer";
 import News from "./componets/articlesNews/News";
 import JoinOurTeam from "./componets/ourTeam/JoinOurTeam";
+import TrophiesContainer from "./componets/trophiesSection/TrophiesContainer";
+import Footer from "./componets/footer/Footer";
 
 export default function LandingPage() {
   const [label, setLabel] = useState("");
@@ -27,6 +29,8 @@ export default function LandingPage() {
       <CoursesContainer />
       <News label={label} />
       <JoinOurTeam label={label} />
+      <TrophiesContainer label={label} />
+      <Footer />
     </>
   );
 }
