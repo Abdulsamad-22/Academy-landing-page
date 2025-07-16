@@ -22,7 +22,7 @@ export default function LandingPage() {
       </section>
 
       <AboutContainer label={label} />
-      <div className="flex flex-col items-center px-6 md:px-20 mt-[82px] mb-20">
+      <div className="flex flex-col items-center px-6 md:px-20 mt-20 mb-20">
         <SectionLabel label={"Our Tasks"} />
         <Tasks />
       </div>

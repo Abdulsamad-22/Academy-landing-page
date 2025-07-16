@@ -61,7 +61,7 @@ export default function News({ label }) {
     <section className="flex flex-col items-center my-[10rem]">
       <SectionLabel label={"Articles & News"} />
 
-      <h4 className="text-[1.5rem] mt-4 md:text-[2rem] font-semibold mb-8">
+      <h4 className="text-[1.5rem] mt-4 md:text-[2rem] font-semibold mb-8 md:mb-12">
         Key News At a Glance
       </h4>
 

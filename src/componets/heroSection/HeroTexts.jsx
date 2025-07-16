@@ -9,7 +9,7 @@ export default function HeaderTexts() {
             </span>
             , PRIDE & FUTURE
           </h1>
-          <p className="text-[0.75rem] md:text-[1.125rem] leading-[1.75]">
+          <p className="text-[0.875rem] md:text-[1.125rem] leading-[1.75]">
             Our task is to ensure that the leading football and mini-football
             academies of the country take our kids to their place. To make our
             school a springboard for them into serious professional football.

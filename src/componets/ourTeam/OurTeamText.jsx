@@ -2,7 +2,7 @@ import SectionLabel from "../utils/SectionLabel";
 
 export default function OurTeamText({ label }) {
   return (
-    <div className="w-full text-left md:w-[40%] py-12 md:py-0 px-8 md:px-12">
+    <div className="w-full text-left md:w-[40%] py-12 md:py-0 px-8 md:px-12 z-10">
       <SectionLabel label={label} />
 
       <div className="w-full space-y-4 my-8">
@@ -15,7 +15,7 @@ export default function OurTeamText({ label }) {
         </p>
       </div>
       <div className="h-[44px]">
-        <button className="py-2 px-8 border-2 border-[#c72020] text-[#c72020] font-semibold hover:border-0 hover:bg-[#c72020] hover:text-white transition duration-300">
+        <button className="py-2 px-8 border-2 border-[#c72020] text-[#c72020] font-semibold hover:border-0 hover:bg-[#c72020] hover:text-white transition duration-300 ">
           Join Now
         </button>
       </div>

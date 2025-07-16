@@ -1,6 +1,6 @@
 export default function LastMatch() {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#12114E] w-full text-[#fff] py-6 px-4 md:px-0 z-20 -mt-8">
+    <div className="flex flex-col items-center justify-center bg-[#12114E] w-full text-[#fff] py-6 px-4 md:px-0 z-10 -mt-8">
       <div className="space-y-2">
         <h2 className="text-[1.25rem]">Last Match</h2>
         <hr className="border-1 border-[#fff]" />

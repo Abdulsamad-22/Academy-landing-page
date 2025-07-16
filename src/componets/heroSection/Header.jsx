@@ -19,9 +19,9 @@ export default function Header() {
       </div>
 
       <div className="flex items-center justify-between w-full absolute top-0 px-8 md:px-16 py-8">
-        <div className="w-[66px] h-[69px] rounded-full bg-[#fff] relative mr-[78px]">
+        <div className="w-[46px] md:w-[66px] h-[49px] md:h-[69px] rounded-full bg-[#fff] relative mr-[78px]">
           <img
-            className="w-[49px] h-[43px] absolute top-4 left-2"
+            className="w-[39px] md:w-[49px] h-[33px] md:h-[43px] absolute top-3 md:top-4 left-1 md:left-2"
             src="/images/logo.png"
             alt=""
           />
@@ -29,7 +29,7 @@ export default function Header() {
 
         <nav className="">
           <div className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <img className="w-9 h-9" src="/images/icon-menu.svg" alt="" />
+            <img className="w-6 h-6" src="/images/icon-menu.svg" alt="" />
           </div>
 
           <ul className="hidden md:flex flex flex-col md:flex-row items-center text-[#fff]">
@@ -59,7 +59,7 @@ export default function Header() {
           <div
             className={`md:hidden transition-all duration-300 ease-in-out absolute top-0 -right-0 bg-[#fff] py-16 px-8 w-2/3 h-[100vh] rounded-lg z-20 ${
               isOpen ? "block" : "max-h-0 hidden"
-            }`}
+            } z-20`}
           >
             <ul className="text-[#12114E] space-y-8">
               <button

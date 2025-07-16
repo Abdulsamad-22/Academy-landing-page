@@ -28,9 +28,9 @@ export default function Footer() {
     <section className="bg-[#151128] py-12 px-12">
       <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0  mb-8 text-[#fff]">
         <div className="flex flex-col items-start gap-2 mb-2">
-          <div className="w-[46px] h-[49px] rounded-full bg-[#fff] relative mb-4">
+          <div className="w-[66px] h-[69px] rounded-full bg-[#fff] relative mb-4">
             <img
-              className="w-[39px] h-[33px] absolute top-3 left-[0.2rem]"
+              className="w-[49px] h-[43px] absolute top-4 left-2"
               src="/images/logo.png"
               alt=""
             />
@@ -39,15 +39,15 @@ export default function Footer() {
           <div>
             <ul className="flex gap-4">
               <a href="https://www.linkedin.com/in/abdulsamad-hussaini-481657283/">
-                <img src="/images/Phone.svg" alt="" />
+                <img src="/images/LinkedinLogo.svg" alt="" />
               </a>
 
               <a href="https://x.com/_Hoossayn">
-                <img src="/images/mail.svg" alt="" />
+                <img src="/images/XLogo.svg" alt="" />
               </a>
 
               <a href="">
-                <img src="/images/Location.svg" alt="" />
+                <img src="/images/InstagramLogo.svg" alt="" />
               </a>
             </ul>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-start md:justify-center gap-4 text-[1rem] text-[#fff]">
+      <div className="flex items-center justify-center gap-4 text-[0.875rem] md:text-[1rem] text-[#fff]">
         <div className="flex justify-center items-center h-6 w-6 p-4 rounded-full border-2 border-[#c4c4c4] text-center">
           C
         </div>

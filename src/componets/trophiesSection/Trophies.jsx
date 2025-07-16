@@ -15,7 +15,6 @@ const trophies = [
 
 export default function Trophies() {
   return (
-    // <div className="grid grid-cols-2 md:grid-cols-4 gap-y-[6rem] md: gap-y-0 ">
     <div className="flex flex-wrap md:flex-nowrap lg:flex-row lg:flex-nowrap items-center justify-center gap-12">
       {trophies.map((trophy, trophyName) => (
         <div
@@ -27,8 +26,12 @@ export default function Trophies() {
           </div>
 
           <div className="w-[150px] text-[#fff] -mt-6">
-            <p className="text-[2.75rem] font-semibold">{trophy.trophyNo}</p>
-            <p className="text-[1.125rem]">{trophy.trophyName}</p>
+            <p className="text-[2rem] md:text-[2.75rem] font-semibold">
+              {trophy.trophyNo}
+            </p>
+            <p className="text-[1rem] md:text-[1.125rem]">
+              {trophy.trophyName}
+            </p>
           </div>
         </div>
       ))}
