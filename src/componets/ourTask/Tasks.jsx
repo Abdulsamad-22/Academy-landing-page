@@ -32,24 +32,24 @@ const tasks = [
 ];
 export default function Tasks() {
   return (
-    <div className="w-full md:w-[90%] grid  grid-cols-1 md:grid-cols-2 mt-20  gap-8">
+    <div className="w-full md:w-[90%] grid  grid-cols-1 md:grid-cols-2 mt-20 gap-12 md:gap-8">
       {tasks.map((task, title) => (
-        <div className="flex flex-col items-start" key={title}>
-          <div className="flex items-center gap-4 mb-4">
+        <div className="flex flex-col items-center md:items-start" key={title}>
+          <div className="flex items-center gap-4 mb-6 md:mb-4">
             <img
-              className={`w-10 h-10 ${
+              className={`w-8 md:w-10 h-8 md:h-10 ${
                 task.title === "Strength" ? "rotate-[-45deg]" : ""
               }`}
               src={task.icon}
               alt=""
             />
             <div className="space-y-3">
-              <h4 className="text-[1.5rem]">{task.title}</h4>
-              <hr className="w-full border-[0.5px] border-black" />
+              <h4 className="text-[1.25rem] md:text-[1.5rem]">{task.title}</h4>
+              <hr className="w-full border-[0.5px] border-black hidden md:block" />
             </div>
           </div>
 
-          <div className="flex items-center w-full  md:w-[85%] h-[120px] bg-[#c72020] text-[#fff] py-4 px-12">
+          <div className="flex items-center w-full  md:w-[85%] h-[120px] bg-[#c72020] text-[0.875rem] md:text-[1rem] text-[#fff] py-4 px-12">
             {task.sub}
           </div>
         </div>

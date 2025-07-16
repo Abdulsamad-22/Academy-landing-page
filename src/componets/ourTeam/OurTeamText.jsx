@@ -2,12 +2,10 @@ import SectionLabel from "../utils/SectionLabel";
 
 export default function OurTeamText({ label }) {
   return (
-    <div className="w-full text-center md:text-left md:w-[40%] py-12 md:py-0 px-8 md:px-12">
-      <div className="w-full md:w-[141px] mb-4">
-        <SectionLabel label={label} />
-      </div>
+    <div className="w-full text-left md:w-[40%] py-12 md:py-0 px-8 md:px-12">
+      <SectionLabel label={label} />
 
-      <div className="w-full space-y-4 mb-8">
+      <div className="w-full space-y-4 my-8">
         <h4 className="text-3xl font-semibold">
           Talk With Your Feet. Play With Your Heart.
         </h4>

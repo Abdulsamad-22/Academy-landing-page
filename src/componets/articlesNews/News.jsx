@@ -59,14 +59,18 @@ const newsContents = [
 export default function News({ label }) {
   return (
     <section className="flex flex-col items-center my-[10rem]">
-      <div className="text-center w-[160px] mb-4">
-        <SectionLabel label={"Articles & News"} />
-      </div>
-      <h4 className="text-[2rem] font-semibold mb-8">Key News At a Glance</h4>
+      <SectionLabel label={"Articles & News"} />
+
+      <h4 className="text-[1.5rem] mt-4 md:text-[2rem] font-semibold mb-8">
+        Key News At a Glance
+      </h4>
 
       <div className="w-full grid grid-col-1 md:grid-cols-3 gap-y-12 gap-x-4 px-9 -items-center">
         {newsContents.map((news, header) => (
-          <div className="border-[1px] border-[#c4c4c4] s" key={header}>
+          <div
+            className="border-[1px] border-[#c4c4c4] rounded-t-2xl"
+            key={header}
+          >
             <div className="w-full cursor-pointer rounded-2xl">
               <img
                 className="w-full rounded-2xl transition-transform duration-300 hover:-translate-y-2"

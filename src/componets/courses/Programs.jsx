@@ -27,7 +27,7 @@ export default function Programs() {
 
       {programs.map((program, index) => (
         <div key={index} className="w-full md:w-[280px] relative">
-          <div className="w-[150px] py-2 px-3 border-2 border-[#c72020] mb-4">
+          <div className="inline-block py-2 px-3 border-2 border-[#c72020] mb-4">
             {program.ageGrade}
           </div>
           <p className="w-[95%] md:w-[205px]">{program.subText}</p>
