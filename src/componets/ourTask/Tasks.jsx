@@ -35,7 +35,7 @@ export default function Tasks() {
     <div className="w-full md:w-[90%] grid  grid-cols-1 md:grid-cols-2 mt-12 gap-12 md:gap-y-8 md:gap-x-[12rem]">
       {tasks.map((task, title) => (
         <div className="flex flex-col items-center md:items-start" key={title}>
-          <div className="flex items-center gap-2 md:gap-4 mb-6 md:mb-4">
+          <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-4">
             <img
               className={`w-8 md:w-10 h-8 md:h-10 ${
                 task.title === "Strength" ? "rotate-[-45deg]" : ""

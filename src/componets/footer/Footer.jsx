@@ -10,9 +10,9 @@ const footerLinks = [
   {
     header: "Contact Us",
     links: [
-      { link: "+234 (0) 8111642890", icon: "/images/Phone.svg" },
+      { link: "+234 (0) 811-1642-890", icon: "/images/Phone.svg" },
       {
-        link: "Brilliantladsfootballacademy@yahoo mail.com",
+        link: "abdulsamadhussaini001@gmail.com",
         icon: "/images/mail.svg",
       },
       {

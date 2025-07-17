@@ -68,12 +68,12 @@ export default function News({ label }) {
       <div className="w-full grid grid-col-1 md:grid-cols-3 gap-y-12 gap-x-4 px-9 -items-center">
         {newsContents.map((news, header) => (
           <div
-            className="border-[1px] border-[#c4c4c4] rounded-t-2xl"
+            className="border-[1px] border-[#c4c4c4] rounded-lg"
             key={header}
           >
-            <div className="w-full cursor-pointer rounded-2xl">
+            <div className="w-full cursor-pointer rounded-lg">
               <img
-                className="w-full rounded-2xl transition-transform duration-300 hover:-translate-y-2"
+                className="w-full rounded-lg transition-transform duration-300 hover:-translate-y-2"
                 src={news.image}
                 alt=""
               />

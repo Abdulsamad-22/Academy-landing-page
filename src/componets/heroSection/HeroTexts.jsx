@@ -1,6 +1,6 @@
 export default function HeaderTexts() {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center md:justify-between absolute top-[25%] md:top-[18%] md:right-10 text-[#fff] pl-[2rem] z-10">
+    <div className="w-full flex flex-col md:flex-row items-center md:justify-between absolute top-1/3 md:top-1/2 -translate-y-1/2 left-[47%]  -translate-x-1/2 md:right-10 text-[#fff] pl-[2rem] z-10">
       <div className="w-full md:w-[50%] px-4 md:px-16 md:pt-[60px] text-center md:text-left">
         <div className="space-y-4 mb-8">
           <h1 className="text-[2rem] md:text-[4rem] font-semibold">
