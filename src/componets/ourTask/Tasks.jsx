@@ -44,8 +44,10 @@ export default function Tasks() {
               alt=""
             />
             <div className="space-y-3">
-              <h4 className="text-[1.25rem] md:text-[1.5rem]">{task.title}</h4>
-              <hr className="w-full border-[0.5px] border-black hidden md:block" />
+              <h4 className="text-[1.25rem] md:text-[1.5rem] text-[#161616]">
+                {task.title}
+              </h4>
+              <hr className="w-full border-[0.5px] border-[#161616] hidden md:block" />
             </div>
           </div>
 

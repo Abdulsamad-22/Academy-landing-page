@@ -10,8 +10,8 @@ export default function OurTeamText({ label }) {
           Talk With Your Feet. Play With Your Heart.
         </h4>
         <p className="text-[1rem]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas morbi
-          erat enim faucibus. Nisl aliquet pellentesque in dolor, fringilla.
+          Join us as a player to unlock your potential through our elite
+          development pathway, or as a coach to shape future stars.
         </p>
       </div>
       <div className="h-[44px]">
